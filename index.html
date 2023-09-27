@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey</h1>
+  <p id="description">This is a feedback form</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name:<input id="name" type="text" name="name" placeholder="Type your name" required></input></label>
+      <label id="email-label">Email:<input id="email" type="email" placeholder="Type your email" required></input></label>
+      <label id="number-label">Number: <input id="number" type="number" placeholder="Type your number" min="4" max="15"></input></label>
+    </fieldset>
+    <fieldset>
+      <label for="">Choose service/product:
+        <select id="dropdown">
+          <option>(Select one)</option>
+          <option>Service 1</option>
+          <option>Product 1</option>
+          <option>Product 2</option>
+        </select>
+      </label>
+      <label id="" for="rating"> Rating:
+        <input type="radio" name="rating" class="inline" value="1">Great</input>
+        <input type="radio" name="rating" class="inline" value="2">Awful</input>
+<input type="radio" name="rating" class="inline" value="3">Unsure</input>
+      </label>
+        <label id="" for="selections">Select:</label>
+        <input type="checkbox" value="1" class="inline">Feature</input>
+        <input type="checkbox" value="2" class="inline">Customer Support</input>
+        <input type="checkbox" value="3" class="inline">Bug</input>
+        <input type="checkbox" value="4" class="inline">Inquiry</input>
+        </fieldset>
+        <fieldset>
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </body>
+</html>
